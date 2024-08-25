@@ -1,0 +1,14 @@
+# Ignorar todo por defecto
+*
+
+# Exceptuar archivos específicos y directorios
+!.gitignore
+!*.kicad_pcb
+!*.kicad_pro
+!*.kicad_sch
+!production/
+!assets/
+
+# Incluir todo el contenido de las carpetas exceptuadas
+!production/**
+!assets/**
