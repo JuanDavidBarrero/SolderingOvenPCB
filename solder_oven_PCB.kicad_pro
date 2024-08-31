@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.32,
+          "height": 3.96,
+          "width": 1.98
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -428,7 +428,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "JuanDavid_Library"
+    ]
   },
   "meta": {
     "filename": "solder_oven_PCB.kicad_pro",
@@ -527,13 +529,43 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Link",
+          "name": "Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Name",
+          "name": "Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Descripción",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Referencia"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -578,6 +610,18 @@
     [
       "c99967d6-1784-4524-bb7c-8c5548fde15b",
       "Raíz"
+    ],
+    [
+      "de65d524-8cdc-4564-8ac0-0ce263cfc510",
+      "esp32"
+    ],
+    [
+      "213d7e4c-0ed0-4ed7-8cef-d0da1246c87d",
+      "Power"
+    ],
+    [
+      "ef1d57e4-c2d1-4e28-808f-821156fcda6a",
+      "modules"
     ]
   ],
   "text_variables": {}
