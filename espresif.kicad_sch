@@ -4000,7 +4000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMD,18x25.5mm WiFi Modules ROHS"
+		(property "Description" " SMD,18x25.5mm WiFi Modules ROHS"
 			(at 51.943 100.076 0)
 			(effects
 				(font

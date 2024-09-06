@@ -4400,7 +4400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Step-down type Adjustable 40V 1.2V~37V 3A TO-263-5 DC-DC Converters ROHS"
+		(property "Description" "    Step-down type Adjustable 40V 1.2V~37V 3A TO-263-5 DC-DC Converters ROHS"
 			(at 202.311 90.678 0)
 			(effects
 				(font

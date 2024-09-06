@@ -4833,7 +4833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3V~5.5V 12 SPI SOIC-8 ADCs/DACs - Special Purpose ROHS"
+		(property "Description" "  3V~5.5V 12 SPI SOIC-8 ADCs/DACs - Special Purpose ROHS"
 			(at 74.676 144.018 0)
 			(effects
 				(font
@@ -6801,7 +6801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "6 buffers invertidos. Alimentación de 3 a 15V. Tecnología CMOS."
+		(property "Description" "  6 buffers invertidos. Alimentación de 3 a 15V. Tecnología CMOS. "
 			(at 215.011 95.758 0)
 			(effects
 				(font
@@ -6992,6 +6992,15 @@
 			)
 		)
 		(property "Description" "Hot surface warning symbol, small"
+			(at 120.396 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 120.396 80.264 0)
 			(effects
 				(font
