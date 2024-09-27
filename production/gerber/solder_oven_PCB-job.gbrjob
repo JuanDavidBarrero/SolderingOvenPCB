@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.3"
+      "Version": "8.0.4"
     },
-    "CreationDate": "2024-08-31T20:41:35-05:00"
+    "CreationDate": "2024-09-26T20:40:35-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,10 +14,10 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 79.298,
-      "Y": 100.126
+      "X": 100.126,
+      "Y": 79.298
     },
-    "LayerNumber": 2,
+    "LayerNumber": 4,
     "BoardThickness": 1.6,
     "Finish": "None"
   },
@@ -27,7 +27,16 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.254,
+      "MinLineWidth": 0.508,
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.508,
       "TrackToRegion": 0.5,
       "RegionToRegion": 0.5
     }
@@ -39,8 +48,18 @@
       "FilePolarity": "Positive"
     },
     {
+      "Path": "solder_oven_PCB-espSigal.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "solder_oven_PCB-gnd.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "solder_oven_PCB-B_Cu.gbr",
-      "FileFunction": "Copper,L2,Bot",
+      "FileFunction": "Copper,L4,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -100,10 +119,34 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.51,
+      "Thickness": 0.1,
       "Material": "FR4",
-      "Name": "F.Cu/B.Cu",
-      "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
+      "Name": "F.Cu/espSigal",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to espSigal)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "espSigal"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 1.24,
+      "Material": "FR4",
+      "Name": "espSigal/gnd",
+      "Notes": "Type: dielectric layer 2 (from espSigal to gnd)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "gnd"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "gnd/B.Cu",
+      "Notes": "Type: dielectric layer 3 (from gnd to B.Cu)"
     },
     {
       "Type": "Copper",

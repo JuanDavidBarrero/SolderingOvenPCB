@@ -141,6 +141,165 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized_Small_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -0.762)
+					(mid 0 -0.3734)
+					(end -1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Heater"
 			(pin_numbers hide)
 			(pin_names
@@ -3544,10 +3703,28 @@
 		(uuid "81018062-40f0-420c-b938-d83b4c16fe4c")
 	)
 	(junction
+		(at 108.204 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "837a4aff-ca12-4964-8276-33b512b96f57")
+	)
+	(junction
 		(at 216.281 57.785)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2066c1a-d696-4538-b1c3-20ac034fb919")
+	)
+	(junction
+		(at 110.49 88.773)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9ba2952-2ccc-4e06-8be8-e3dc9b761f70")
+	)
+	(junction
+		(at 127.254 73.533)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f288b5ad-5f39-43de-9318-efc7509c38ca")
 	)
 	(junction
 		(at 86.106 134.493)
@@ -3639,13 +3816,33 @@
 	)
 	(wire
 		(pts
-			(xy 127.254 70.866) (xy 127.254 75.946)
+			(xy 127.254 70.866) (xy 127.254 73.533)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "243c5044-aaec-4836-b52a-21daf73e4eba")
+	)
+	(wire
+		(pts
+			(xy 108.204 80.01) (xy 108.204 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2562eed8-daf0-4cca-87b1-3a69509a9a56")
+	)
+	(wire
+		(pts
+			(xy 127.254 73.533) (xy 127.254 75.946)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "296f7172-b8a3-4354-b848-178d0de23e96")
 	)
 	(wire
 		(pts
@@ -3679,7 +3876,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.426 74.93) (xy 100.711 74.93)
+			(xy 110.49 88.773) (xy 108.204 88.773)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff288a0-b43d-494b-927e-76f64d17272f")
+	)
+	(wire
+		(pts
+			(xy 100.711 74.93) (xy 108.204 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3716,6 +3923,16 @@
 			(type default)
 		)
 		(uuid "383e1b2b-486a-4801-948c-203e556da061")
+	)
+	(wire
+		(pts
+			(xy 108.204 74.93) (xy 112.395 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e006439-5884-4a85-b7fb-feccc781a087")
 	)
 	(wire
 		(pts
@@ -3929,6 +4146,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 73.533) (xy 121.92 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9bb1fa-e029-4900-81a1-d48fe9521311")
+	)
+	(wire
+		(pts
 			(xy 147.701 126.746) (xy 151.003 126.746)
 		)
 		(stroke
@@ -4006,6 +4233,16 @@
 			(type default)
 		)
 		(uuid "7fb8022f-cca5-47c2-975d-42a26e0d9fa3")
+	)
+	(wire
+		(pts
+			(xy 121.92 92.075) (xy 110.49 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "805118a3-ac3b-4750-bdeb-5cf73e7ad40e")
 	)
 	(wire
 		(pts
@@ -4109,6 +4346,26 @@
 	)
 	(wire
 		(pts
+			(xy 112.395 78.994) (xy 112.395 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3133e27-fe44-47e2-b143-c6bfd85b616a")
+	)
+	(wire
+		(pts
+			(xy 110.49 92.075) (xy 110.49 88.773)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36f0d60-cd20-4a83-9725-17a2416b30e1")
+	)
+	(wire
+		(pts
 			(xy 127.254 90.17) (xy 127.254 83.566)
 		)
 		(stroke
@@ -4116,6 +4373,16 @@
 			(type default)
 		)
 		(uuid "aa19b917-7155-4e5a-8cb6-5ed3eb4b2f0b")
+	)
+	(wire
+		(pts
+			(xy 112.395 86.614) (xy 112.395 88.773)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab8a36f6-8710-48bf-8a3e-fb79027700bf")
 	)
 	(wire
 		(pts
@@ -4159,6 +4426,16 @@
 	)
 	(wire
 		(pts
+			(xy 112.395 88.773) (xy 110.49 88.773)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c46f4616-ab0a-4f09-9326-eb063f12ed61")
+	)
+	(wire
+		(pts
 			(xy 181.61 69.596) (xy 181.61 66.04)
 		)
 		(stroke
@@ -4186,6 +4463,26 @@
 			(type default)
 		)
 		(uuid "d1d8eff3-7135-4bd6-b511-47400dd6cff1")
+	)
+	(wire
+		(pts
+			(xy 127.254 73.533) (xy 121.92 73.533)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f89eaa-a118-4027-b065-5b50b805d205")
+	)
+	(wire
+		(pts
+			(xy 108.204 88.773) (xy 108.204 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d86e453a-a191-4ddf-a9f0-166ab14e295d")
 	)
 	(wire
 		(pts
@@ -5021,6 +5318,76 @@
 			(project "solder_oven_PCB"
 				(path "/c99967d6-1784-4524-bb7c-8c5548fde15b/ef1d57e4-c2d1-4e28-808f-821156fcda6a"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 112.395 82.804 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ce862b3-59c0-4bf9-8e34-755ac7cb59d0")
+		(property "Reference" "R12"
+			(at 114.3 81.5339 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150"
+			(at 114.3 84.0739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 113.411 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 112.395 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 112.395 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e75e270a-9fde-4d29-93fe-8881bf24beb4")
+		)
+		(pin "1"
+			(uuid "ce2b58a5-5857-42db-9a8e-dc82209e62fb")
+		)
+		(instances
+			(project "solder_oven_PCB"
+				(path "/c99967d6-1784-4524-bb7c-8c5548fde15b/ef1d57e4-c2d1-4e28-808f-821156fcda6a"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6552,6 +6919,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 108.204 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba720d62-dfe6-4faf-b8fd-e194313fa29b")
+		(property "Reference" "C8"
+			(at 102.997 81.661 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 101.346 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 108.204 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.204 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 108.204 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6db6019d-454b-4bd6-b001-c425f6d6cbf2")
+		)
+		(pin "1"
+			(uuid "18cec2ca-be1b-4b65-a33d-a1af0d378bbc")
+		)
+		(instances
+			(project ""
+				(path "/c99967d6-1784-4524-bb7c-8c5548fde15b/ef1d57e4-c2d1-4e28-808f-821156fcda6a"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 86.741 120.015 0)
 		(unit 1)
@@ -6886,7 +7322,7 @@
 		(dnp no)
 		(uuid "d91454b4-4304-4dfe-ad4b-5a0b1c8a9a17")
 		(property "Reference" "R1"
-			(at 119.507 83.82 0)
+			(at 128.905 75.438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6895,7 +7331,7 @@
 			)
 		)
 		(property "Value" "Heater"
-			(at 117.475 85.852 0)
+			(at 131.953 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6947,7 +7383,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Hot_Small")
-		(at 120.396 80.264 0)
+		(at 133.604 79.629 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6956,7 +7392,7 @@
 		(fields_autoplaced yes)
 		(uuid "de9bbddb-0b05-448c-88a7-a4769db8ee56")
 		(property "Reference" "#SYM1"
-			(at 120.396 76.708 0)
+			(at 133.604 76.073 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6965,7 +7401,7 @@
 			)
 		)
 		(property "Value" "SYM_Hot_Small"
-			(at 120.396 83.439 0)
+			(at 133.604 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6974,7 +7410,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.396 84.709 0)
+			(at 133.604 84.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6983,7 +7419,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.158 85.344 0)
+			(at 134.366 84.709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6992,16 +7428,7 @@
 			)
 		)
 		(property "Description" "Hot surface warning symbol, small"
-			(at 120.396 80.264 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 120.396 80.264 0)
+			(at 133.604 79.629 0)
 			(effects
 				(font
 					(size 1.27 1.27)
